@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BattleShipWpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     
-        <StackPanel>
-            <Grid x:Name="ViewGrid" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <StackPanel>
+        <TextBlock x:Name="CounterTextBlock" TextWrapping="Wrap" Text="Shots Missed: 0" HorizontalAlignment="Left"/>
+        <Grid x:Name="ViewGrid" VerticalAlignment="Center" HorizontalAlignment="Center">
 
-            </Grid>
-        </StackPanel>
+        </Grid>
+        
+    </StackPanel>
     
 </Window>
