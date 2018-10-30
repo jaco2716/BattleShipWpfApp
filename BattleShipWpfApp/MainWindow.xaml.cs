@@ -30,7 +30,7 @@ namespace BattleShipWpfApp
         List<int> dimensionX = new List<int>();
         List<int> dimensionY = new List<int>();
         private int shotsFired = 0;
-        private int ships = 14;
+        private int ships = 0;
 
         public MainWindow()
         {
@@ -147,10 +147,10 @@ namespace BattleShipWpfApp
             {
                 for (int y = 0; y < gridSize; y++)
                 {
-                    if (gridArray[x,y] != "X" || gridArray[x,y] != "Shoot") ships++;
+                    if (buttonArray[x,y].Content != "X" && buttonArray[x,y].Content != "Shoot") ships++;
                 }
             }
-            if (ships == 1) GameOver();
+            if (ships == 14) GameOver();
             else ships = 0;
         }
         public void GameOver()
